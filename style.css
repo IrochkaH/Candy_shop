@@ -1,0 +1,158 @@
+/* Общие стили */
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255); /* белый фон */
+  color: #555; /* мягкий серо-синий текст */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: #ffe6f1; /* бегунок | фон */
+}
+
+/* Шапка */
+header {
+  position: fixed; /* фиксируем сверху */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffe6f1; /* нежно-розовый */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* лёгкая тень */
+  box-sizing: border-box;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #444;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6699; /* акцент при наведении */
+}
+
+main {
+  flex: 1; /* занимает всё свободное место */
+  padding-top: 100px; /* чтобы контент не залезал под фиксированный header */
+}
+
+/* Вкусняшка месяца */
+.special {
+  text-align: center;
+  background: #ffe6f1; /* Крч, тут будет розовы, т.к мне не нравится как выглядит нежно голубой, фуфуфуфуф */
+  padding: 40px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.special img {
+  max-width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.special img:hover {
+  transform: scale(1.05); /* лёгкий зум при наведении */
+}
+
+/* Карусель */
+.carousel {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scrollbar-width: thin;
+}
+
+.carousel .item img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.carousel .item img:hover {
+  transform: translateY(-5px);
+}
+
+/* Страница продукта */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.order-form {
+  align-self: flex-start;
+  background: #ffe6f1; /* нежно-розовый */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.order-form input, .order-form button {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.order-form button {
+  background: #ffb6c1;
+  color: #444;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.order-form button:hover {
+  background: #99ffb3;
+}
+
+.product-image img {
+  max-width: 400px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-description {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Подвал */
+footer {
+  background: rgba(255, 182, 193, 0.85); /* нежно-розовый с прозрачностью */
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #444;
+  border-top: 2px solid #ffe6f1;
+}
