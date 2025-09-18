@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - Sweet Life</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<script src="shop.js"></script>
+<body>
+    <!-- Хедер -->
+    <header>
+        <div class="logo">🍰 Sweet Life</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html" class="active">Магазин</a></li>
+                <li><a href="about_us.html">О нас</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="notification" class="notification hidden"></div>
+
+
+    <!-- Витрина -->
+    <section class="shop-section">
+        <h2>Наши сладости</h2>
+
+        <div class="product-grid">
+            <!-- Карточка товара -->
+            <div class="product-card">
+                <img src="/assets/Napaleon.jpg" alt="Торт Малина & Шоколад">
+                <h3>Торт «Малина & Шоколад»</h3>
+                <p>Шоколадный бисквит с малиновым кремом.</p>
+                <span class="price">1200 ₽</span>
+                <button class="add-to-cart" data-name="Торт «Малина & Шоколад»" data-price="1200">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/assets/jecler.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/assets/cupcake.jpg" alt="Капкейки клубничные">
+                <h3>Капкейки клубничные</h3>
+                <p>Нежный бисквит с кремом и свежей клубникой.</p>
+                <span class="price">600 ₽</span>
+                <button class="add-to-cart" data-name="Капкейки клубничные" data-price="600">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/donut.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/assets/Macaron.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/assets/moti.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/tiramisy.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/assets/pavlova.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Napaleon.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button onclick="addToCart('Торт «Малина & Шоколад»', 1200, 'Нежный шоколадный бисквит с малиновым кремом')">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/pavlova.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Napaleon.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/moti.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 Sweet Life. Все права защищены.</p>
+    </foot>
+</body>
+</html>

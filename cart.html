@@ -6,6 +6,7 @@
     <title>Корзина - Sweet Life</title>
     <link rel="stylesheet" href="cart.css">
 </head>
+<script src="cart.js"></script>
 <body>
     <!-- Хедер -->
     <header>
@@ -13,46 +14,32 @@
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="product.html">Магазин</a></li>
+                <li><a href="shop.html">Магазин</a></li>
                 <li><a href="about_us.html">О нас</a></li>
                 <li><a href="cart.html" class="active">Корзина</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Корзина -->
-    <section class="cart-section">
-        <h2>Ваша корзина</h2>
+  <section class="cart-section">
+    <h2>Ваша корзина</h2>
 
-        <!-- Пример карточек товара -->
-        <div class="cart-card">
-            <div class="cart-info">
-                <h3>Торт «Малина & Шоколад»</h3>
-                <p>Нежный шоколадный бисквит с малиновым кремом.</p>
-                <span class="price">1200 ₽</span>
-            </div>
-            <button class="remove-btn">Удалить</button>
-        </div>
+    <!-- сюда скрипт добавит карточки -->
+    <div class="cart-items"></div>
 
-        <div class="cart-card">
-            <div class="cart-info">
-                <h3>Эклеры ванильные</h3>
-                <p>Лёгкий заварной крем в хрустящей оболочке.</p>
-                <span class="price">450 ₽</span>
-            </div>
-            <button class="remove-btn">Удалить</button>
-        </div>
+    <!-- Итог -->
+    <div class="cart-summary">
+        <p><strong>Итого:</strong> 0 ₽</p>
+        <button class="checkout-btn">Оформить заказ</button>
+    </div>
+</section>
 
-        <!-- Итог -->
-        <div class="cart-summary">
-            <p><strong>Итого:</strong> 1650 ₽</p>
-            <button class="checkout-btn">Оформить заказ</button>
-        </div>
-    </section>
+
 
     <!-- Футер -->
     <footer>
         <p>© 2025 Sweet Life. Все права защищены.</p>
     </footer>
+
 </body>
 </html>
