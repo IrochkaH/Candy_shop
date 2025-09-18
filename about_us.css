@@ -1,0 +1,96 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* Хедер и футер — те же, что и на index.html */
+header {
+    background-color: #ffb6c1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffd9e6;
+}
+
+footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Секция "О нас" */
+.about-section {
+    padding: 100px 20px 40px; /* отступ сверху, чтобы не наезжал header */
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #ff5c8d;
+}
+
+/* Карточки */
+.about-card {
+    background: #ffe4ec;
+    border-radius: 15px;
+    padding: 30px 40px;
+    margin: 20px 0;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.about-card h3 {
+    color: #ff5c8d;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.about-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Sweet Life</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Хедер -->
+    <header>
+        <div class="logo">🍰 Sweet Life</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="special.html">Вкусняшка месяца</a></li>
+                <li><a href="about_us.html">О нас</a></li>
+                <li><a href="cart.html" class="active">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Корзина -->
+    <section class="cart-section">
+        <h2>Ваша корзина</h2>
+
+        <!-- Пример карточек товара -->
+        <div class="cart-card">
+            <div class="cart-info">
+                <h3>Торт «Малина & Шоколад»</h3>
+                <p>Нежный шоколадный бисквит с малиновым кремом.</p>
+                <span class="price">1200 ₽</span>
+            </div>
+            <button class="remove-btn">Удалить</button>
+        </div>
+
+        <div class="cart-card">
+            <div class="cart-info">
+                <h3>Эклеры ванильные</h3>
+                <p>Лёгкий заварной крем в хрустящей оболочке.</p>
+                <span class="price">450 ₽</span>
+            </div>
+            <button class="remove-btn">Удалить</button>
+        </div>
+
+        <!-- Итог -->
+        <div class="cart-summary">
+            <p><strong>Итого:</strong> 1650 ₽</p>
+            <button class="checkout-btn">Оформить заказ</button>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 Sweet Life. Все права защищены.</p>
+    </footer>
+</body>
+</html>

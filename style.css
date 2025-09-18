@@ -105,7 +105,7 @@ main {
 }
 
 .order-form {
-  align-self: flex-start;
+  align-self: flex-center;
   background: #ffe6f1; /* нежно-розовый */
   padding: 20px;
   border-radius: 12px;
@@ -114,7 +114,7 @@ main {
 }
 
 .order-form input, .order-form button {
-  width: 100%;
+  width: 97.5%;
   margin-bottom: 12px;
   padding: 10px;
   border: 1px solid #ddd;
@@ -122,6 +122,8 @@ main {
 }
 
 .order-form button {
+  margin: 15px auto 0 auto;
+  display: block;
   background: #ffb6c1;
   color: #444;
   font-weight: bold;
@@ -131,7 +133,7 @@ main {
 }
 
 .order-form button:hover {
-  background: #99ffb3;
+  background: #eab3e2;
 }
 
 .product-image img {
@@ -146,7 +148,7 @@ main {
   text-align: center;
 }
 
-/* Подвал */
+
 footer {
   background: rgba(255, 182, 193, 0.85); /* нежно-розовый с прозрачностью */
   text-align: center;
