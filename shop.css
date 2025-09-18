@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+/* Хедер / футер */
+header {
+    background-color: #ffb6c1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ffe6f1;
+}
+
+footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Секция */
+.shop-section {
+    padding: 100px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shop-section h2 {
+    font-size: 2rem;
+    color: #ff5c8d;
+    margin-bottom: 30px;
+}
+
+/* Сетка товаров */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #ffe6f1;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    color: #ff5c8d;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Кнопка */
+.add-to-cart {
+    background: #ff5c8d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #ff2f70;
+}
+ 

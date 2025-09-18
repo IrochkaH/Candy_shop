@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Клубничный торт — Sweet Life</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - Sweet Life</title>
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
+    <!-- Хедер -->
+    <header>
+        <div class="logo">🍰 Sweet Life</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html" class="active">Магазин</a></li>
+                <li><a href="about_us.html">О нас</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Навигация -->
-  <header>
-    <div class="logo">🍰 Сладкая жизнь 🍰</div>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="product.html">Вкусняшка месяца</a>
-      <a href="about_us.html">О нас</a>
-      <a href="#">Корзина</a>
-    </nav>
-  </header>
+    <!-- Витрина -->
+    <section class="shop-section">
+        <h2>Наши сладости</h2>
 
-  <!-- Основной блок -->
-  <main class="product-page">
-    <!-- Форма заказа слева -->
-     <div class="product-description">
-      <h2>Клубничный торт</h2>
-      <p>
-        Наш фирменный клубничный торт приготовлен из свежих ягод и
-        нежнейшего крема. Отлично подойдёт для праздника или романтического вечера.
-      </p>
-    </div>
-    <div class="product-image">
-      <img src="/assets/strawberry_cake.jpg" alt="Клубничный торт">
-    </div>
-    <aside class="order-form">
-      <h3>Заказать</h3>
-      <form>
-        <label>Имя:</label>
-        <input type="text" required>
+        <div class="product-grid">
+            <!-- Карточка товара -->
+            <div class="product-card">
+                <img src="images/cake1.jpg" alt="Торт Малина & Шоколад">
+                <h3>Торт «Малина & Шоколад»</h3>
+                <p>Шоколадный бисквит с малиновым кремом.</p>
+                <span class="price">1200 ₽</span>
+                <button class="add-to-cart" data-name="Торт «Малина & Шоколад»" data-price="1200">В корзину</button>
+            </div>
 
-        <label>Телефон:</label>
-        <input type="tel" required>
+            <div class="product-card">
+                <img src="images/eclairs.jpg" alt="Эклеры ванильные">
+                <h3>Эклеры ванильные</h3>
+                <p>Воздушные заварные пирожные с ванильным кремом.</p>
+                <span class="price">450 ₽</span>
+                <button class="add-to-cart" data-name="Эклеры ванильные" data-price="450">В корзину</button>
+            </div>
 
-        <label>Количество:</label>
-        <input type="number" min="1" value="1">
+            <div class="product-card">
+                <img src="images/cupcakes.jpg" alt="Капкейки клубничные">
+                <h3>Капкейки клубничные</h3>
+                <p>Нежный бисквит с кремом и свежей клубникой.</p>
+                <span class="price">600 ₽</span>
+                <button class="add-to-cart" data-name="Капкейки клубничные" data-price="600">В корзину</button>
+            </div>
+        </div>
+    </section>
 
-        <button type="submit">Оформить заказ</button>
-      </form>
-    </aside>
-  </main>
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 Sweet Life. Все права защищены.</p>
+    </footer>
 
-  <!-- Подвал -->
-  <footer>
-    <p>ИП "Сладости мира" | г. Сахароград, ул. Пирожковая, 12</p>
-    <p>Тел: +7 (900) 123-45-67</p>
-  </footer>
-
+    <!-- Скрипт для корзины -->
+    <script src="shop.js"></script>
 </body>
 </html>
