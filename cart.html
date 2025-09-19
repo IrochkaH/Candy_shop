@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина - Sweet Life</title>
-    <link rel="stylesheet" href="cart.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Корзина - Sweet Life</title>
+  <link rel="stylesheet" href="cart.css">
 </head>
-<script src="cart.js"></script>
 <body>
-    <!-- Хедер -->
-    <header>
-        <div class="logo">🍰 Sweet Life</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="shop.html">Магазин</a></li>
-                <li><a href="about_us.html">О нас</a></li>
-                <li><a href="cart.html" class="active">Корзина</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">🍰 Sweet Life</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="shop.html">Магазин</a></li>
+        <li><a href="about_us.html">О нас</a></li>
+        <li><a href="cart.html" class="active">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section class="cart-section">
     <h2>Ваша корзина</h2>
-
-    <!-- сюда скрипт добавит карточки -->
     <div class="cart-items"></div>
 
-    <!-- Итог -->
     <div class="cart-summary">
-        <p><strong>Итого:</strong> 0 ₽</p>
-        <button class="checkout-btn">Оформить заказ</button>
+      <p><strong>Итого:</strong> 0 ₽</p>
+      <button class="checkout-btn">Оформить заказ</button>
     </div>
-</section>
+  </section>
 
+  <footer>
+    <p>© 2025 Sweet Life. Все права защищены.</p>
+  </footer>
 
+  <!-- Модалка оформления заказа -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Оформление заказа</h2>
+      <form id="orderForm">
+        <label>ФИО:</label>
+        <input type="text" name="fio" required>
 
-    <!-- Футер -->
-    <footer>
-        <p>© 2025 Sweet Life. Все права защищены.</p>
-    </footer>
+        <label>Телефон:</label>
+        <input type="tel" name="phone" required placeholder="+7...">
 
+        <label>Адрес доставки:</label>
+        <input type="text" name="address" required>
+
+        <label>Промокод:</label>
+        <input type="text" name="promo">
+
+        <label>Комментарий к заказу:</label>
+        <textarea name="comment"></textarea>
+
+        <button type="submit" class="confirm-btn">Подтвердить заказ</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
 </body>
 </html>

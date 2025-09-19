@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: rgb(255, 255, 255); /* белый фон */
-  color: #555; /* мягкий серо-синий текст */
+  color: #333; /* мягкий серо-синий текст */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffe6f1; /* нежно-розовый */
+  background: #ffb6c1; /* нежно-розовый */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,13 +30,13 @@ header {
 header .logo {
   font-weight: bold;
   font-size: 20px;
-  color: #444;
+  color: white;
 }
 
 header nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #444;
+  color: white ;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -150,7 +150,7 @@ main {
 
 
 footer {
-  background: rgba(255, 182, 193, 0.85); /* нежно-розовый с прозрачностью */
+  background: #ffb6c1; /* нежно-розовый с прозрачностью */
   text-align: center;
   padding: 20px;
   margin-top: 40px;
